@@ -1,0 +1,97 @@
+# ====================== Assigning Values to Variables ======================
+# (Yes, It Is Me Putting Capitals At The Beginning Of Every Word. It's Easier To Read.)
+# ==== Course Data ==== (Lists)
+
+Current_Courses = (["COMP 163", "MATH 131", "ENGL 100", "HIST 106", "GEEN 111", "COMP 121"])  
+Current_Credits = ([3, 4, 3, 3, 1, 1])
+
+Completed_Courses = (["Biology","Chemistry", "Calculus", "Spanish II", "World History"]) # Example Courses. Im in Freshman Year.
+GPA_History = ([4.0, 4.0, 4.0, 4.0])
+
+# ==== Contact Data ==== (Tuples)
+Emergency_Contact = ("Mom", "Jane Doe", "704-555-0199") # False for privacy
+Home_Address = ("456 Oak Street, Charlotte, NC 28202") # False for privacy
+Social_MediaIN = ("Instagram", "@maddiekujo", 547)
+Social_MediaTW = ("Threads", "@maddiekujo", 31)
+Birthday = (2,4,2007) # Month, Day, Year
+
+# ==== Interest Data ==== (Sets)
+Current_Skills = {"Python basics", "JavaScript", "Problem solving", "Time management", "Communication"}
+Wished_Skills = {"CSS", "Data structures", "Git", "Game design", "HTML"}
+Career_Interests = {"Software development", "Game development", "Data analytics", "Misc development"}
+Hobbies = {"Gaming", "Skating", "Reading", "Cheerleading", "Music"}
+Entertainment_Backlog = {"One Piece", "Jojo's Bizzare Adventure", "Hunter x Hunter", "Incantation", "Ponyo"} 
+
+# ==== MISC Data ==== (Dictionaries)
+
+DCurrent_Credits = {"COMP 163": 3, "MATH 131": 4, "ENGL 100": 3, "HIST 106": 3, "GEEN 111": 1, "COMP 121": 1} 
+DCourse_Professors = {"COMP 163": "Prof. Rhodes", "MATH 131": "Dr. Varatharajah", "ENGL 100": "Prof. Rhoades", "HIST 106": "Dr. Devoe", "GEEN 111": "Dr. Parrish", "COMP 121": "Prof. Rhodes"} 
+DCourse_Location = {"COMP 163": "M-Eric 300", "MATH 131": "Marteena 201", "ENGL 100": "Crosby 121", "HIST 106": "Crosby 210", "GEEN 111": "McNair 130", "COMP 121": "Mcnair 200"} # False for privacy
+DBudget = {"Food": 450, "Entertainment": 200, "Books": 125, "Transportation": 100} # False for privacy
+DStudyTimes = {"Programming": 10, "Math": 8, "English": 4, "History": 3} # False for privacy
+DContacts = {"Mom": "704-555-0199", "Roomate:": "336-555-7821", "Academic Advisor": "336-344-5000"} # False for privacy
+
+# ======================================== Outputting Information =========================================
+print("================================================================")
+print("              PERSONAL ACADEMIC & LIFE PORTFOLIO")
+print("================================================================")
+print("Student: Madison Wilkins | Email: mcwilkins1@ncat.edu")
+print("From: Charlotte, NC | Graduating: Spring 2029")
+print("Major: Computer Science")
+
+print("") # === White Space ===
+
+print("=== ACADEMIC PROFILE ===") # Calls Variables in Course Information Section
+print(f"Current Semester: {sum(Current_Credits)} credits across {len(Current_Courses)} courses") #Calculating Current Credits 
+print(f"Cumulative GPA: {round(sum(GPA_History)/len(GPA_History), 2)}") # Calcuating GPA 
+print(f"Weekly Study Time: {sum(DStudyTimes.values())} hours") # Calculating Weekly Study Time
+print(f"Academic Investment: ${round((DBudget['Books'] / sum(DStudyTimes.values())), 2)} per study hour") 
+
+print("") # === White Space ===
+
+print("Current Courses:")
+print(f"{Current_Courses[0]} - {DCurrent_Credits['COMP 163']} credits - {DCourse_Professors['COMP 163']} - {DCourse_Location['COMP 163']}") 
+print(f"{Current_Courses[1]} - {DCurrent_Credits['MATH 131']} credits - {DCourse_Professors['MATH 131']} - {DCourse_Location['MATH 131']}") 
+print(f"{Current_Courses[2]} - {DCurrent_Credits['ENGL 100']} credits - {DCourse_Professors['ENGL 100']} - {DCourse_Location['ENGL 100']}") 
+print(f"{Current_Courses[3]} - {DCurrent_Credits['HIST 106']} credits - {DCourse_Professors['HIST 106']} - {DCourse_Location['HIST 106']}")
+print(f"{Current_Courses[4]} - {DCurrent_Credits['GEEN 111']} credits - {DCourse_Professors['GEEN 111']} - {DCourse_Location['GEEN 111']}")
+print(f"{Current_Courses[5]} - {DCurrent_Credits['COMP 121']} credits - {DCourse_Professors['COMP 121']} - {DCourse_Location['COMP 121']}")
+
+print("") # === White Space ===
+
+print("=== PERSONAL DEVELOPMENT ===")
+print(f"Current Skills: {Current_Skills}") # Pretty Straightforward
+print(f"Learning Goals: {Wished_Skills}")
+print(f"Career Interests: {Career_Interests}")
+print(f"Skills Currently Have: {len(Current_Skills)}")
+print(f"Skills Want to Learn: {len(Wished_Skills)}") 
+
+print ("") # === White Space ===
+
+print("=== FINANCIAL OVERVIEW ===")
+print(f"Monthly Budget: ${sum(DBudget.values())}") # Calculating Monthly Budget
+print(f"Food: ${DBudget['Food']} (${round(DBudget['Food'] / 30, 2)}/day)") # Prints Food Budget and Calculates Daily Food Budget
+print(f"Entertainment: ${DBudget['Entertainment']}")
+print(f"Books: ${DBudget['Books']}")
+print(f"Transportation: ${DBudget['Transportation']}")
+print(f"Annual Projection: ${sum(DBudget.values()) * 12}") # Calculating Annual Projection
+
+print("") # === White Space ===
+
+print(f"=== CONNECTIONS & CONTACTS ===")
+print(f"Emergency Contact: {Emergency_Contact[1]} ({Emergency_Contact[0]}) - {Emergency_Contact[2]}") # Formatting Emergency Contact Info (Puts Name First, Then Nickname.)
+print(f"Home Address: {Home_Address}")
+print(f"Social Media Presence: {Social_MediaIN[2] + Social_MediaTW[2]} followers across 2 platforms") # Calculating Total Social Media Followers
+print(f"Key Contacts: {len(DContacts)} people in directory") # Yo mama
+
+print("") # === White Space ===
+
+print("=== LIFE STATISTICS ===")
+print(f"Total Courses Completed: {len(Completed_Courses)}") # Calculating Completed Courses
+print(f"Current Academic Load: {round(sum(DStudyTimes.values()) + sum(DCurrent_Credits.values()))} weekly commitments") # Calculating Academic Load (Study + Credit)
+print(f"Entertainment Backlog: {len(Entertainment_Backlog)} items")
+print(f"Current Hobbies: {len(Hobbies)} activities")
+
+print("================================================================")
+
+# Note, the following output has been altered for privacy reasons. 
