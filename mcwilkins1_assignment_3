@@ -1,5 +1,5 @@
 # ====================== Assigning Values to Variables ======================
-# (Yes, It Is Me Putting Capitals At The Beginning Of Every Word. Sue Me. It's Easier To Read.)
+# (Yes, It Is Me Putting Capitals At The Beginning Of Every Word. It's Easier To Read.)
 # ==== Course Data ==== (Lists)
 
 Current_Courses = (["COMP 163", "MATH 131", "ENGL 100", "HIST 106", "GEEN 111", "COMP 121"])  
@@ -7,6 +7,8 @@ Current_Credits = ([3, 4, 3, 3, 1, 1])
 
 Completed_Courses = (["Biology","Chemistry", "Calculus", "Spanish II", "World History"]) # Example Courses. Im in Freshman Year.
 GPA_History = ([4.0, 4.0, 4.0, 4.0])
+
+
 
 # ==== Contact Data ==== (Tuples)
 Emergency_Contact = ("Mom", "Jane Doe", "704-555-0199") # False for privacy
@@ -45,15 +47,17 @@ print("=== ACADEMIC PROFILE ===") # Calls Variables in Course Information Sectio
 print(f"Current Semester: {sum(Current_Credits)} credits across {len(Current_Courses)} courses") #Calculating Current Credits 
 print(f"Cumulative GPA: {round(sum(GPA_History)/len(GPA_History), 2)}") # Calcuating GPA 
 print(f"Weekly Study Time: {sum(DStudyTimes.values())} hours") # Calculating Weekly Study Time
-print(f"Academic Investment: ${round((DBudget['Books'] / sum(DStudyTimes.values())), 2)} per study hour") # Calculating Academic Investment (I DIED INSIDE CODING THIS, SO MANY PARENTHESIS)
+print(f"Academic Investment: ${round((DBudget['Books'] / sum(DStudyTimes.values())), 2)} per study hour") 
 
 print("") # === White Space ===
 
 print("Current Courses:")
-print(f"{Current_Courses[0]} - {DCurrent_Credits['COMP 163']} credits - {DCourse_Professors['COMP 163']} - {DCourse_Location['COMP 163']}") # Should be COMP 163
-print(f"{Current_Courses[1]} - {DCurrent_Credits['MATH 150']} credits - {DCourse_Professors['MATH 150']} - {DCourse_Location['MATH 150']}") # Should be MATH 150
-print(f"{Current_Courses[2]} - {DCurrent_Credits['ENG 101']} credits - {DCourse_Professors['ENG 101']} - {DCourse_Location['ENG 101']}") # Should be ENG 101
-print(f"{Current_Courses[3]} - {DCurrent_Credits['HIS 105']} credits - {DCourse_Professors['HIS 105']} - {DCourse_Location['HIS 105']}") # Should be HIS 105
+print(f"{Current_Courses[0]} - {DCurrent_Credits['COMP 163']} credits - {DCourse_Professors['COMP 163']} - {DCourse_Location['COMP 163']}") 
+print(f"{Current_Courses[1]} - {DCurrent_Credits['MATH 131']} credits - {DCourse_Professors['MATH 131']} - {DCourse_Location['MATH 131']}") 
+print(f"{Current_Courses[2]} - {DCurrent_Credits['ENGL 100']} credits - {DCourse_Professors['ENGL 100']} - {DCourse_Location['ENGL 100']}") 
+print(f"{Current_Courses[3]} - {DCurrent_Credits['HIST 106']} credits - {DCourse_Professors['HIST 106']} - {DCourse_Location['HIST 106']}")
+print(f"{Current_Courses[4]} - {DCurrent_Credits['GEEN 111']} credits - {DCourse_Professors['GEEN 111']} - {DCourse_Location['GEEN 111']}")
+print(f"{Current_Courses[5]} - {DCurrent_Credits['COMP 121']} credits - {DCourse_Professors['COMP 121']} - {DCourse_Location['COMP 121']}")
 
 print("") # === White Space ===
 
@@ -92,6 +96,4 @@ print(f"Current Hobbies: {len(Hobbies)} activities")
 
 print("================================================================")
 
-
-
-
+# Note, the following output has been altered for belief privacy reasons. 
