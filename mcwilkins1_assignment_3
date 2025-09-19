@@ -16,11 +16,11 @@ Social_MediaTW = ("Threads", "@maddiekujo", 31)
 Birthday = (2,4,2007) # Month, Day, Year
 
 # ==== Interest Data ==== (Sets)
-Current_Skills = {"Python basics", "HTML", "Problem solving", "Time management", "Photography"}
-Wished_Skills = {"JavaScript", "Data structures", "Git", "Web design", "Public speaking"}
-Career_Interests = {"Software development", "Web development", "Data science", "Game development"}
-Hobbies = {"Gaming", "Photography", "Reading", "Soccer", "Music"}
-Entertainment_Backlog = {"One Piece", "Barry", "Life", "Incantation", "Memento"} # Incantation mentioned?? I ####### love that movie man
+Current_Skills = {"Python basics", "JavaScript", "Problem solving", "Time management", "Communication"}
+Wished_Skills = {"CSS", "Data structures", "Git", "Game design", "HTML"}
+Career_Interests = {"Software development", "Game development", "Data analytics", "Misc development"}
+Hobbies = {"Gaming", "Skating", "Reading", "Cheerleading", "Music"}
+Entertainment_Backlog = {"One Piece", "Jojo's Bizzare Adventure", "Hunter x Hunter", "Incantation", "Ponyo"} 
 
 # ==== MISC Data ==== (Dictionaries)
 
@@ -91,6 +91,7 @@ print(f"Entertainment Backlog: {len(Entertainment_Backlog)} items")
 print(f"Current Hobbies: {len(Hobbies)} activities")
 
 print("================================================================")
+
 
 
 
