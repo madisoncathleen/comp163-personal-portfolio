@@ -9,11 +9,11 @@ Completed_Courses = (["Biology","Chemistry", "Calculus", "Spanish II", "World Hi
 GPA_History = ([4.0, 4.0, 4.0, 4.0])
 
 # ==== Contact Data ==== (Tuples)
-Emergency_Contact = ("Mom", "Hannah Smith", "704-555-0199")
-Home_Address = ("456 Oak Street, Charlotte, Nc 28202")
-Social_MediaIN = ("Instagram", "@jordan_codes", 312)
-Social_MediaTW = ("Twitter", "@jordandev", 127)
-Birthday = (5,22,2006) # Month, Day, Year
+Emergency_Contact = ("Mom", "Jane Doe", "704-555-0199") # False for privacy
+Home_Address = ("456 Oak Street, Charlotte, NC 28202") # False for privacy
+Social_MediaIN = ("Instagram", "@maddiekujo", 547)
+Social_MediaTW = ("Threads", "@maddiekujo", 31)
+Birthday = (2,4,2007) # Month, Day, Year
 
 # ==== Interest Data ==== (Sets)
 Current_Skills = {"Python basics", "HTML", "Problem solving", "Time management", "Photography"}
@@ -35,8 +35,8 @@ DContacts = {"Mom": "704-555-0199", "Roomate:": "336-555-7821", "Academic Adviso
 print("================================================================")
 print("              PERSONAL ACADEMIC & LIFE PORTFOLIO")
 print("================================================================")
-print("Student: Jordan Smith | Email: jsmith@ncat.edu")
-print("From: Charlotte, NC | Graduating: Spring 2028")
+print("Student: Madison Wilkins | Email: mcwilkins1@ncat.edu")
+print("From: Charlotte, NC | Graduating: Spring 2029")
 print("Major: Computer Science")
 
 print("") # === White Space ===
@@ -91,4 +91,5 @@ print(f"Entertainment Backlog: {len(Entertainment_Backlog)} items")
 print(f"Current Hobbies: {len(Hobbies)} activities")
 
 print("================================================================")
+
 
