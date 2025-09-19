@@ -2,11 +2,11 @@
 # (Yes, It Is Me Putting Capitals At The Beginning Of Every Word. Sue Me. It's Easier To Read.)
 # ==== Course Data ==== (Lists)
 
-Current_Courses = (["COMP 163", "MATH 150", "ENG 101", "HIS 105"])
-Current_Credits = ([3, 3, 3, 3])
+Current_Courses = (["COMP 163", "MATH 131", "ENGL 100", "HIST 106", "GEEN 111", "COMP 121"])  
+Current_Credits = ([3, 4, 3, 3, 1, 1])
 
-Completed_Courses = (["Biology","Chemistry", "Calculus", "Spanish II", "World History"])
-GPA_History = ([3.2, 3.6, 3.4, 3.7])
+Completed_Courses = (["Biology","Chemistry", "Calculus", "Spanish II", "World History"]) # Example Courses. Im in Freshman Year.
+GPA_History = ([4.0, 4.0, 4.0, 4.0])
 
 # ==== Contact Data ==== (Tuples)
 Emergency_Contact = ("Mom", "Hannah Smith", "704-555-0199")
@@ -91,3 +91,4 @@ print(f"Entertainment Backlog: {len(Entertainment_Backlog)} items")
 print(f"Current Hobbies: {len(Hobbies)} activities")
 
 print("================================================================")
+
